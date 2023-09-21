@@ -1,12 +1,104 @@
-<div></div>
-<style>
-  div {
-  height: 300px;
-  background-color: pink;
-  background: linear-gradient(90deg, pink 20%, gray, lightblue, lightcoral 80%,transparent)
-  background-size: 30px 30px;
-  background: linear-gradient(90deg, pink, transparent 150%), url(data:image/jpeg;base64,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);
-  background-size: cover;
-background-position:center;  
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * p,
+        h1 {
+            color: black;
+            margin: 0;
+            background-color: lightblue;
+            padding: 2rem;
+        }
+
+        .flex {
+            background-color: pink;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 10px;
+        }
+
+        .flex>div {
+            background-color: purple;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+
+        
+    </div>
+    <h1>東海大學附屬高級中等學校小學部
+    </h1>
+
+
+    <東海大學附屬高級中等學校小學部 <h2>沿革</h2>
+    <ul>
+        <li>1955年，美國基督教聯合董事會在台創立東海大學。</li>
+        <li>1956年春季，成立東海大學附設小學和幼兒園，校長由大學校長兼任，校舍七間，學生30餘人</li>
+
+        <li> 1958年，第一屆畢業生僅有8人，其後因應社會需求逐年增至24班，幼稚園6班。</li>
+        <li>2002年，東海大學設立教育學程，更名為東海大學附屬小學，設專任校長1人。</li>
+        <li>2008年，3、5年級的樂班改成音樂增能班。</li>
+        <li>2009年，3－6年級之樂班均改為音樂增能班。</li>
+        <li>2011年8月，併入東海大學附屬實驗高級中學，改為東海大學附屬實驗高級中學小學部，原校長改為小學部部主任。
+        </li>
+        <li>2017年8月，更名為「財團法人東海大學附屬高級中等學校小學部」。
+        </li>
+        <li>歷任首長
+        </li>
+        <li>東大附小校長
+        </li>
+        <li>簡素娟：2002年－2003年2月
+        </li>
+        <li>黃家懋：2003年2月－2007年8月
+        </li>
+        <li>李春香：2007年8月－2011年8月</li>
+        <li>陳世佳：2011年8月－2013年8月</li>
+        <li> 鍾興能：2013年8月－目前</li>
+        <li>東大附中小學部主任</li>
+        <li>李春香：2011年8月－2012年8月</li>
+        <li>林彩碧：2012年8月－離職</li>
+        <li>鍾興能：2011年8月－2013年8月</li>
+        <li> 彭永芳：2014年8月－2017年8月</li>
+        <li>白美芳：2019年8月－目前</li>
+        </ul>
+
+        <h3>校歌</h3>
+        <ul>
+        
+        附小同仁 詞
+        呂華恩 曲
+        美哉台中 文化高，東大附小 在西郊；
+        環境優美 設備新，培育健全 小英豪；
+        莘莘兒童 聚一堂，沐浴春風 樂陶陶；
+        教忠教孝 教仁義，基督博愛 應記牢；
+        活潑身心 勤鍛鍊，五育並進 有目標；
+        東海精神 正發揚，愛國榮譽 我做到。
+        </ul>
+
+        知名校友
+        蘇亭：國立清華大學學生會副會長
+        相關條目
+        財團法人東海大學附屬高級中等學校
+        東海大學
+</body>
+
+</html>
